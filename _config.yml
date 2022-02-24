@@ -93,7 +93,7 @@ author:
   name             : "영진이"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "영진이 블로그 입니다."
-  location         : "Daegu"
+  location         : "Daegu, South Korea"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -275,3 +275,5 @@ defaults:
       comments: # true
       share: true
       related: true
+      sidebar_main: true
+      mathjax: true
