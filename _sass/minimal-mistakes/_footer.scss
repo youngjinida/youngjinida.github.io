@@ -1,13 +1,14 @@
 /* ==========================================================================
-   FOOTER
-   ========================================================================== */
+  FOOTER
+  ========================================================================== */
 
-.page__footer {
+  .page__footer {
   @include clearfix;
   float: left;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
+  clear: both;
   margin-top: 3em;
   color: $muted-text-color;
   -webkit-animation: $intro-transition;

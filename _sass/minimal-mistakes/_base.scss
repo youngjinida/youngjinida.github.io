@@ -1,8 +1,8 @@
 /* ==========================================================================
-   BASE ELEMENTS
-   ========================================================================== */
+  BASE ELEMENTS
+  ========================================================================== */
 
-html {
+  html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
@@ -13,7 +13,7 @@ body {
   padding: 0;
   color: $text-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  line-height: 1.8;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -63,18 +63,31 @@ small,
   font-size: $type-size-6;
 }
 
+summary {
+  cursor:pointer;
+  color:rgb(255, 249, 194);
+}
+
 p {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.0em;
 }
 
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid $text-color;
+  border-bottom: 1px solid $primary-color;
+  padding-bottom: 4.5px;
   a {
     color: inherit;
   }
 }
+
+/* devinlife comment: 구글 애드 센스의 아래 바 레이아웃 삭제
+  https://github.com/mmistakes/minimal-mistakes/issues/306 */
+  ins.adsbygoogle {
+  border-bottom: none !important;
+}
+
 
 del a {
   color: inherit;
@@ -126,12 +139,10 @@ blockquote {
 /* links */
 
 a {
+  text-decoration: none;
+
   &:focus {
     @extend %tab-focus;
-  }
-
-  &:visited {
-    color: $link-color-visited;
   }
 
   &:hover {
@@ -169,6 +180,7 @@ td > code {
   padding-bottom: 0.1rem;
   font-size: 0.8em;
   background: $code-background-color;
+  color: $primary-color;
   border-radius: $border-radius;
 
   &:before,
@@ -200,8 +212,8 @@ li ol {
 }
 
 /*
-   Media and embeds
-   ========================================================================== */
+    Media and embeds
+    ========================================================================== */
 
 /* Figures and images */
 
@@ -284,21 +296,21 @@ svg:not(:root) {
 }
 
 /*
-   Navigation lists
-   ========================================================================== */
+    Navigation lists
+    ========================================================================== */
 
 /**
- * Removes margins, padding, and bullet points from navigation lists
- *
- * Example usage:
- * <nav>
- *    <ul>
- *      <li><a href="#link-1">Link 1</a></li>
- *      <li><a href="#link-2">Link 2</a></li>
- *      <li><a href="#link-3">Link 3</a></li>
- *    </ul>
- *  </nav>
- */
+  * Removes margins, padding, and bullet points from navigation lists
+  *
+  * Example usage:
+  * <nav>
+  *    <ul>
+  *      <li><a href="#link-1">Link 1</a></li>
+  *      <li><a href="#link-2">Link 2</a></li>
+  *      <li><a href="#link-3">Link 3</a></li>
+  *    </ul>
+  *  </nav>
+  */
 
 nav {
   ul {
@@ -327,8 +339,8 @@ nav {
 }
 
 /*
-   Global animation transition
-   ========================================================================== */
+    Global animation transition
+    ========================================================================== */
 
 b,
 i,
