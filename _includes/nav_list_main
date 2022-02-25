@@ -8,8 +8,8 @@
         <span class="nav__sub-title">Deep Learning</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "deeplearning" %}
-                        <li><a href="/categories/deeplearning" class=""> Deep Learning ({{category[1].size}})</a></li>
+                    {% if category[0] == "Basic" %}
+                        <li><a href="/categories/Basic" class=""> Basic ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
