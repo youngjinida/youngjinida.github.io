@@ -268,8 +268,8 @@
                         <li><a href="/categories/bitcoin" class="">블록체인 암호화폐 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-      </li> -->
+            </ul>  -->
+      </li>
       
   </ul>
 </nav>
